@@ -1,5 +1,6 @@
 //@dart=2.9
 import 'package:digigarson_demo/screens/home.dart';
+import 'package:digigarson_demo/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main()=>runApp(MyApp());
@@ -12,9 +13,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'DigiGarson',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: Home(),
+      home: LoginScreen(),
     );
   }
 }
