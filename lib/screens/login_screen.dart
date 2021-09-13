@@ -1,7 +1,8 @@
+import 'package:digigarson_demo/screens/security_code.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -52,31 +53,10 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 15.0,),
-                  Container(
-                    height: 60.0,
-                    width:340.0,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10)
-                    ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                          hintText: "Password",
-                          hintStyle: TextStyle(fontSize: 18.0, color: Colors.black),
-                          prefixIcon: Icon(Icons.lock,
-                            color: Colors.red,),
-                          border: OutlineInputBorder(
-                            borderSide: BorderSide( color: Colors.red),
-                            borderRadius:BorderRadius.circular(10),
-                          )
-                      ),
-                    ),
-                  ),
                   SizedBox(height: 20.0,),
                   Padding(
                     padding: const EdgeInsets.only(right:45.0, left: 45.0, top:5.0, bottom:15.0),
-                    child: MaterialButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));},
+                    child: MaterialButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Security()));},
                       height: 60,
                       minWidth: double.infinity,
                       elevation: 25.0,
@@ -132,7 +112,7 @@ class LoginScreen extends StatelessWidget {
                         child:
                         IconButton(onPressed:(){},
                           alignment: Alignment.center,
-                          icon: Icon(Icons.qr_code, color: Colors.white,),
+                          icon: Icon(Icons.qr_code, color: Colors.black,),
                           iconSize: 40,
                         ),
                       ),
