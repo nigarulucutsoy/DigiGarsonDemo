@@ -32,18 +32,7 @@ class _ProfileState extends State<Profile> {
               ),
             ),
           ),
-      body: Expanded(
-        child: ListView.builder(
-          itemCount: 4,
-          itemBuilder: (BuildContext context,int index){
-            return ListTile(
-              leading: Icon(Icons.person),
-              title: Text("Merve Çoban"),
-              trailing: Icon(Icons.edit),
-            );
-          },
-        ),
-      ),
+      body: Text("profil sayfası"),
     );
   }
 }

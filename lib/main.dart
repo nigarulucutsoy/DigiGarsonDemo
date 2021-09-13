@@ -1,5 +1,4 @@
 //@dart=2.9
-import 'package:digigarson_demo/screens/home.dart';
 import 'package:digigarson_demo/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 

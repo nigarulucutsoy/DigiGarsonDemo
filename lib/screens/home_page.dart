@@ -1,5 +1,6 @@
 //@dart=2.9
 
+import 'package:digigarson_demo/screens/scan_qr.dart';
 import 'package:flappy_search_bar/flappy_search_bar.dart';
 import 'package:flappy_search_bar/search_bar_style.dart';
 import 'package:flutter/material.dart';
@@ -22,12 +23,12 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Container(
                   height: 80.0,
-                  width: 340.0,
+                  width: 200.0,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     child: SearchBar(
                       loader: Text("loading..."),
-                      iconActiveColor: Colors.red,
+                      iconActiveColor: Colors.red[400],
                       searchBarStyle: SearchBarStyle(
                         backgroundColor: Colors.white,
                         padding: EdgeInsets.only(left: 50.0),
@@ -43,7 +44,9 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.only(top: 0.0),
                     child: IconButton(
                       icon: Icon(Icons.qr_code),
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ScanQR()));
+                      },
                     ),
                   ),
                 ),

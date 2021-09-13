@@ -4,7 +4,7 @@ import 'package:digigarson_demo/screens/profile.dart';
 import 'package:digigarson_demo/screens/settings.dart';
 import 'package:flutter/material.dart';
 
-import 'cart.dart';
+import 'cart_screen.dart';
 import 'favorites.dart';
 import 'home_page.dart';
 import 'orders.dart';
@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    _icerikler = [HomePage(), Categories(),Cart()];
+    _icerikler = [HomePage(), Categories(),CartScreen()];
   }
 
   @override

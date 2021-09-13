@@ -31,7 +31,6 @@ class LoginScreen extends StatelessWidget {
                     height: 300.0,
                     width: 250,
                     child: Positioned(
-
                       child: Image.asset("assets/images/logodigi.png"),),
                   ),
                   Container(

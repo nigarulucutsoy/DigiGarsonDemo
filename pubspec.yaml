@@ -31,6 +31,12 @@ dependencies:
     sdk: flutter
   flappy_search_bar: 1.4.1
   flutter_image_slideshow:
+  mysql1:
+  path_provider: ^2.0.3
+  qr_flutter: ^4.0.0
+  barcode_scan_fix: ^1.0.2
+  sqflite:
+  path:
 
 
   # The following adds the Cupertino Icons font to your application.
